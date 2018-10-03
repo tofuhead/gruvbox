@@ -1,38 +1,38 @@
 " -----------------------------------------------------------------------------
-" File: gruvbox.vim
+" File: gruvboxdarker.vim
 " Description: Retro groove color scheme for Vim
 " Author: morhetz <morhetz@gmail.com>
-" Source: https://github.com/morhetz/gruvbox
+" Source: https://github.com/morhetz/gruvboxdarker
 " Last Modified: 09 Apr 2014
 " -----------------------------------------------------------------------------
 
-function! gruvbox#invert_signs_toggle()
-  if g:gruvbox_invert_signs == 0
-    let g:gruvbox_invert_signs=1
+function! gruvboxdarkerdarker#invert_signs_toggle()
+  if g:gruvboxdarkerdarker_invert_signs == 0
+    let g:gruvboxdarkerdarker_invert_signs=1
   else
-    let g:gruvbox_invert_signs=0
+    let g:gruvboxdarkerdarker_invert_signs=0
   endif
 
-  colorscheme gruvbox
+  colorscheme gruvboxdarkerdarker
 endfunction
 
 " Search Highlighting {{{
 
-function! gruvbox#hls_show()
+function! gruvboxdarkerdarker#hls_show()
   set hlsearch
-  call GruvboxHlsShowCursor()
+  call gruvboxdarkerdarkerHlsShowCursor()
 endfunction
 
-function! gruvbox#hls_hide()
+function! gruvboxdarkerdarker#hls_hide()
   set nohlsearch
-  call GruvboxHlsHideCursor()
+  call gruvboxdarkerdarkerHlsHideCursor()
 endfunction
 
-function! gruvbox#hls_toggle()
+function! gruvboxdarkerdarker#hls_toggle()
   if &hlsearch
-    call gruvbox#hls_hide()
+    call gruvboxdarkerdarker#hls_hide()
   else
-    call gruvbox#hls_show()
+    call gruvboxdarker#hls_show()
   endif
 endfunction
 
